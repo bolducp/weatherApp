@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <div class="row" id="title">Welcome to Paige's Weather App!</div>
+    </div>
+    <div class="row" id="enterLocation">
+      <label>Enter zipcode: </label>
+      <input id="location" type="text" size="15">
+      <button id="weatherSearch" class="btn btn-info">Get Forcast</button>
+    </div>
+    <div class="row">
+      <h3></h3>
+    </div>
+    <div class="row">
+      <div id="currentWeather" class="col-sm-6 col-xs-12">
+        <h2></h2>
+        <div id="leftSide" class="row">
+          <div class="col-xs-6">
+            <p>Temperature:</p>
+            <p id="temp"></p>
+            <br>
+            <p>Humidity: </p>
+            <p id="humidity"></p>
+          </div>
+          <div id="weather" class="col-xs-6">
+            <p></p>
+            <img>
+          </div>
+        </div>
+      </div>
+      <div id="forecast" class="col-sm-6 col-xs-12">
+        <h2>3-Day Forecast</h2>
+        <div class="row">
+          <div id="day1" class="col-xs-4">
+            <img>
+          </div>
+          <div id="day2" class="col-xs-4">
+            <img>
+          </div>
+          <div id="day3" class="col-xs-4">
+            <img>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.1/moment.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
