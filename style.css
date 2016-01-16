@@ -41,3 +41,11 @@ p{
 #forecast img{
   height: 60px;
 }
+
+.high, .low{
+  font-size: 16px;
+}
+
+.dayOfWeek, .temp{
+  color: LightSlateGray;
+}
